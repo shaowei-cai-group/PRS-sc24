@@ -16,6 +16,7 @@ RUN ./configure
 RUN make -j
 
 WORKDIR /cloud-sat/mapleCOMSPS/m4ri-20140914
+RUN ./configure
 RUN make clean
 RUN make -j
 
@@ -24,14 +25,14 @@ RUN make clean
 RUN make -j
 
 WORKDIR /cloud-sat/yalsat
-RUN make clean
-./configure.sh
-make -j
+RUN ./configure.sh
+RUN make -j
 
 WORKDIR /cloud-sat/lingeling
+RUN ./configure.sh
 RUN make clean
-./configure.sh
-make -j
+RUN ./configure.sh
+RUN make -j
 
 WORKDIR /cloud-sat/
 RUN make clean
