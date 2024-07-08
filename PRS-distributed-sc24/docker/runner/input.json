@@ -1,0 +1,7 @@
+{
+ "formula_file": "/rundir/experiment/test.cnf",
+ "worker_node_ips": ["leader", "worker"],
+ "timeout_seconds": "10",
+ "formula_language": "",
+ "solver_argument_list": [""]
+}
